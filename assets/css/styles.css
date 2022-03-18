@@ -1,0 +1,98 @@
+body{
+	font-family: product sans;
+	color: white;
+
+	background-image: url("../images/blackbg.jpg");
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/*position: fixed;*/
+	background-size: cover;
+}
+
+/**************global***************/
+
+.highlightred{
+	color: red;
+	font-weight: bolder;
+}
+
+/****************header*******************/
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+
+	width: 95%;
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 20px;
+
+}
+.headerleft{
+	margin-left: 10px;
+	color: grey;
+}
+.headerright{
+	margin-right: 30px;
+	width: 300px;
+	font-size: 20px;
+}
+.headerright li{
+	display: flex;
+	list-style: none;
+
+	
+}
+.headerright ol{
+	color: grey;
+
+	border-bottom: solid;
+	border-color: grey;
+	border-radius: 10px;
+	border-width: 0.5px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 7px;
+	padding-top: 8px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+/****************headercompletes*******************/
+
+/****************section1*******************/
+.firstsection{
+	margin-top: 15%;
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+}
+.centertext{
+	font-size: 80px;
+	font-weight: bolder;
+}
+.centertext p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.section1des{
+	font-size: 25px;
+	font-weight: normal;
+
+	border-left-style: solid;
+	border-left-color: red;
+	border-radius: 5px;
+	border-width: 5px;
+
+	padding-left: 25px;
+	margin-left: 25px;
+}
+
+
+/****************section1completes*******************/
