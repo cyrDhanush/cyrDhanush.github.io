@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 body{
 	font-family: product sans;
 	color: white;
@@ -16,9 +19,24 @@ body{
 	color: red;
 	font-weight: bolder;
 }
+progress{
+	height: 15px;
+}
+a{
+	text-decoration: none;
+	text-decoration-color: default;
+	color: grey;
+}
+a:hover,a:active,a:visited{
+	color: grey;
+}
 
 /****************header*******************/
 header{
+
+	background-color: black;
+	border-radius: 15px;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -27,13 +45,15 @@ header{
 
 	filter: drop-shadow(1px 1px 10px black);
 
-	width: 95%;
-	height: 50px;
+	max-width: 95%;
+	height: 70px;
 	top: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
 	margin-top: 20px;
+
+	padding-left: 20px;
 
 }
 .headerleft{
@@ -42,8 +62,9 @@ header{
 }
 .headerright{
 	margin-right: 30px;
-	width: 300px;
+	width: 450px;
 	font-size: 20px;
+	justify-content: space-between;
 }
 .headerright li{
 	display: flex;
@@ -121,15 +142,15 @@ header{
 }
 
 .forpicture img{
-	height: 250px;
+	/*height: 250px;*/
 	width: 250px;
 	object-fit: cover;
-	border-radius: 35px;
-	filter: drop-shadow(0px 0px 10px black);
+	border-radius: 25px;
+	filter: drop-shadow(1px 1px 10px black);
 	margin-left: 35%;
 }
 .fordetails{
-	margin-top: 50px;
+	margin-top: 25px;
 	padding-left: 25%;
 }
 .fordetails h4{
@@ -161,3 +182,53 @@ header{
 	font-size: 23px;
 }
 /****************section2completes*******************/
+
+/****************section3*******************/
+
+.languages h2{
+	font-size: 45px;
+	margin-left: 10%;
+}
+
+.languages{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.langrow{
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.langbox{
+	text-align: center;
+	background-color: black;
+	background-image: url("../images/language-card-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	border-radius: 25px;
+	filter: drop-shadow(1px 1px 5px red);
+	width: 250px;
+
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+.langbox img{
+	height: 150px;
+	filter: drop-shadow(0px 0px 10px black);
+}
+.langbox h3{
+	color: white;
+}
+
+
+
+
+/****************section3completes*******************/
