@@ -23,6 +23,9 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
+	z-index: 1000;
+
+	filter: drop-shadow(1px 1px 10px black);
 
 	width: 95%;
 	height: 50px;
@@ -91,8 +94,70 @@ header{
 	border-width: 5px;
 
 	padding-left: 25px;
-	margin-left: 25px;
+	margin-left: 35px;
 }
 
 
 /****************section1completes*******************/
+/****************section2*******************/
+
+.divbetdetailsandpic{
+	display: flex;
+	flex: 1 1 auto;
+	background-color: #383838;
+	margin-top: 290px;
+
+	padding-bottom: 50px;
+	border-radius: 20px;
+}
+.divpicleft{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 55px;
+}
+
+.forpicture img{
+	height: 250px;
+	width: 250px;
+	object-fit: cover;
+	border-radius: 35px;
+	filter: drop-shadow(0px 0px 10px black);
+	margin-left: 35%;
+}
+.fordetails{
+	margin-top: 50px;
+	padding-left: 25%;
+}
+.fordetails h4{
+	font-size: 23px;
+	font-weight: bolder;
+	color: red;
+	margin-bottom: 5px;
+}
+.fordetails p{
+	font-size: 20px;
+	padding-left: 15px;
+	margin: 15px;
+}
+
+.divdetailsright{
+	max-width: 45%;
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-top: 45px;
+	font-size: 20x;
+}
+.divdetailsright h2{
+	color: red;
+	font-weight: bolder;
+	font-size: 35px;
+}
+.divdetailsright p{
+	line-height: 1.5em;
+	font-size: 23px;
+}
+/****************section2completes*******************/
