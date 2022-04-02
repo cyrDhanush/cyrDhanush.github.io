@@ -1,0 +1,42 @@
+
+body{
+	font-family: product sans;
+	background-image: url("https://source.unsplash.com/1920x1080/?coding");
+	background-size: cover;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+.content-container{
+	position: absolute;
+	text-align: center;
+	width: 70%;
+	height: 70%;
+	
+	margin: 7% 14%;
+
+}
+.blur{
+	backdrop-filter: blur(20px);
+	background-color: rgba(0,0,0, 0.2); /* Black w/opacity/see-through */
+  	position: absolute;
+	height: 100%;
+  	width: 100%;
+
+  	border-color: rgba(255,255,255,0.2);
+  	border-style: solid;
+	border-radius: 50px;
+}
+.overclass{
+	position: relative;
+	color: white;
+	font-size: 25px;
+	height: 100%;
+  	width: 100%;
+}
+.overclass h1{
+	text-align: left;
+	margin-left: 90px;
+	font-size: 140px;
+}
