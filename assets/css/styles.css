@@ -6,12 +6,14 @@ body{
 	color: white;
 
 	background-image: url("../images/blackbg.jpg");
-	background-image: url("https://source.unsplash.com/1920x1080/?black");
+	/*background-image: url("https://source.unsplash.com/1920x1080/?black");*/
 	background-color: black;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	/*position: fixed;*/
 	background-size: cover;
+
+	margin-bottom: 0px;
 }
 
 /**************global***************/
@@ -26,10 +28,10 @@ progress{
 a{
 	text-decoration: none;
 	text-decoration-color: default;
-	color: grey;
+	color: rgb(201, 201, 201);
 }
 a:hover,a:active,a:visited{
-	color: grey;
+	color: rgb(201, 201, 201);
 }
 
 /****************header*******************/
@@ -41,7 +43,6 @@ header{
 	
 
 	max-width: 97%;
-	height: 70px;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -136,22 +137,33 @@ header{
 	margin: auto;
 	-webkit-text-stroke: 0px black;
 
+	backdrop-filter: blur(6px);
+
 }
 
 
 /****************section1completes*******************/
 /****************section2*******************/
 
+.aboutsectioncontainer{
+	
+	width: 100%;
+	min-width: 860px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 20px;
+}
+
 .blur{
-	backdrop-filter: blur(20px);
+	/* backdrop-filter: blur(20px); */
+	/* filter: blur(5px); */
 	background-color: rgba(0,0,0, 0.2); /* Black w/opacity/see-through */
   	position: absolute;
-	height: 107%;
-  	width: 98%;
+	height: 100%;
+  	width: 100%;
 
   	border-color: rgba(255,255,255,0.2);
   	border-style: solid;
-	border-radius: 20px;
+	
 
 	padding-bottom: 50px;
 
@@ -160,10 +172,16 @@ header{
 }
 
 .divbetdetailsandpic{
-	position: relative;
+	/*position: relative;*/
 	display: flex;
+	flex-direction: row;
 	flex: 1 1 auto;
-	/*background-color: #383838;*/
+	width: 100%;
+	 backdrop-filter: blur(10px); 
+	 background-color: rgba(0,0,0, 0.2);
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
 	margin-top: 290px;
 
 	padding-bottom: 50px;
@@ -173,8 +191,8 @@ header{
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
+	/*margin-left: auto;
+	margin-right: auto;*/
 
 	margin-top: 55px;
 }
@@ -204,7 +222,7 @@ header{
 }
 
 .divdetailsright{
-	max-width: 45%;
+	width: 45%;
 	padding-right: 50px;
 	padding-left: 50px;
 	margin-top: 45px;
@@ -226,6 +244,7 @@ header{
 .languages h2{
 	font-size: 45px;
 	margin-left: 10%;
+	filter: drop-shadow(3px 5px 7px black);
 }
 
 .languages{
@@ -237,6 +256,7 @@ header{
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
+	flex-wrap: wrap;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
@@ -245,17 +265,24 @@ header{
 }
 .langbox{
 	text-align: center;
-	background-color: black;
-	background-image: url("../images/language-card-bg.jpg");
+	 background-color: rgba(0, 0, 0, 0.09);
+	/*background-image: url("../images/language-card-bg.jpg"); */
+	backdrop-filter: blur(10px);
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	border-radius: 25px;
-	filter: drop-shadow(1px 1px 5px red);
+	/* filter: drop-shadow(1px 1px 5px red); */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	width: 250px;
 
 	padding-top: 30px;
 	padding-bottom: 30px;
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	
 
 }
 .langbox img{
@@ -270,3 +297,75 @@ header{
 
 
 /****************section3completes*******************/
+
+/*************contact section*************/
+
+.contactcontainer{
+	width: 450px;
+	backdrop-filter: blur(20px);
+	position: relative;
+	color: white;
+	border-radius: 30px;
+	border-color: white;
+	border-style: solid;
+
+	padding-top: 2%;
+	padding-bottom: 3%;
+
+	margin: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 30px;
+}
+
+
+
+
+.contact_heading{
+	text-align: center;
+}
+
+.boxlayout{
+	margin-left: 20%;
+}
+.contact h2{
+	font-size: 45px;
+}
+.parentflexcontact{
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.topic{
+	font-size: 23px;
+	font-weight: bolder;
+	color: red;
+}
+.answer{
+	font-size: 20px;
+	padding-left: 15px;
+	margin: 15px;
+}
+
+/***************************************/
+
+
+/****************footer******************/
+
+.bottom{
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(5px);
+	padding-top: 10px;
+	padding-bottom: 20px;
+
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+.bottom p{
+	margin-bottom: 3px;
+}
+
+/****************************************/
